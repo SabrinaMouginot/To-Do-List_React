@@ -15,9 +15,9 @@
 <body>
     <div id="app">
         <h1>To-do-list</h1>
-        <form >
+        <form ref="form" onSubmit={this.onSubmit} className="form-inline">
             <input type="text" ref="itemName" className="form-control" placeholder="ajouter une nouvelle tâche..."/>
-
+            <button type="submit" className="btn btn-default">Ajouter</button> 
         </form>
     </div>
     <script src="script.js"></script>
